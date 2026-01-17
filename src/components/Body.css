@@ -4,11 +4,6 @@
   background-color: #FFFFFF;
 }
 
-.body-section {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
 /* Section Header */
 .body-header {
   display: flex;
@@ -98,59 +93,6 @@
   height: 14px;
 }
 
-/* Magazine Cards Container */
-.body-cards-container {
-  display: flex;
-  gap: 32px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-  /* Show 3 cards at once on larger screens */
-  flex-wrap: nowrap;
-}
-
-/* On large screens, show 3 cards without scrolling */
-@media (min-width: 1400px) {
-  .body-cards-container {
-    overflow-x: hidden;
-  }
-}
-
-.body-cards-container::-webkit-scrollbar {
-  height: 6px;
-}
-
-.body-cards-container::-webkit-scrollbar-track {
-  background: #F5F5F5;
-  border-radius: 3px;
-}
-
-.body-cards-container::-webkit-scrollbar-thumb {
-  background: #D0D0D0;
-  border-radius: 3px;
-}
-
-.body-cards-container::-webkit-scrollbar-thumb:hover {
-  background: #B0B0B0;
-}
-
-/* Magazine Card */
-.body-magazine-card {
-  position: relative;
-  background-color: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  /* Flexible width to show 3 cards at once on large screens */
-  flex: 0 0 calc((100% - 64px) / 3); /* 100% minus 2 gaps (32px each) divided by 3 */
-  min-width: 400px; /* Minimum width for smaller screens */
-  max-width: 700px; /* Maximum width */
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 /* Card wrapper for fixed height */
 .body-magazine-card-wrapper {
   height: 320px;
@@ -183,11 +125,6 @@
 
 .body-magazine-card-wrapper .card-footer {
   flex-shrink: 0;
-}
-
-.body-magazine-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Left Section - Image */
@@ -479,28 +416,10 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1400px) {
-  .body-cards-container {
-    overflow-x: auto; /* Enable scrolling on smaller screens */
-  }
-
-  .body-magazine-card {
-    flex: 0 0 auto; /* Allow cards to maintain their min-width */
-    min-width: 600px;
-  }
-}
 
 @media (max-width: 1200px) {
   .body-container {
     padding: 0px 60px;
-  }
-
-  .body-cards-container {
-    gap: 24px;
-  }
-
-  .body-magazine-card {
-    min-width: 550px;
   }
 
   .body-card-left {
@@ -528,10 +447,6 @@
     width: 100%;
     justify-content: center;
   }
-
-  .body-cards-container {
-    gap: 20px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -545,13 +460,6 @@
 
   .body-subtitle {
     font-size: 14px;
-  }
-
-  .body-magazine-card {
-    min-width: 600px;
-    max-width: 600px;
-    gap: 20px;
-    padding: 16px;
   }
 
   .body-card-left {
@@ -585,14 +493,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-  }
-
-  .body-magazine-card {
-    min-width: 100%;
-    max-width: 100%;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
   }
 
   .body-card-left {

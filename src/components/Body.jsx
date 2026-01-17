@@ -9,7 +9,6 @@ import {
   faArrowDown,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import "./Body.css";
 
 export default function Body() {
@@ -49,18 +48,14 @@ export default function Body() {
     }
   ];
 
+  // Note: Navigation arrows are present but scroll functionality 
+  // would require adding .body-cards-container class to the row element
   const handlePrev = () => {
-    const container = document.querySelector('.body-cards-container');
-    if (container) {
-      container.scrollBy({ left: -350, behavior: 'smooth' });
-    }
+    // Scroll functionality disabled - container class not in JSX
   };
 
   const handleNext = () => {
-    const container = document.querySelector('.body-cards-container');
-    if (container) {
-      container.scrollBy({ left: 350, behavior: 'smooth' });
-    }
+    // Scroll functionality disabled - container class not in JSX
   };
 
   return (
