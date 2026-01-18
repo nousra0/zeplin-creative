@@ -48,14 +48,13 @@ export default function Body() {
     }
   ];
 
-  // Note: Navigation arrows are present but scroll functionality 
-  // would require adding .body-cards-container class to the row element
+  // Navigation arrows - scroll functionality can be implemented when needed
   const handlePrev = () => {
-    // Scroll functionality disabled - container class not in JSX
+    // TODO: Implement scroll functionality
   };
 
   const handleNext = () => {
-    // Scroll functionality disabled - container class not in JSX
+    // TODO: Implement scroll functionality
   };
 
   return (
