@@ -32,6 +32,20 @@
   gap: 24px;
 }
 
+@media (max-width: 1200px) {
+  .hero-content {
+    margin-left: 60px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    margin-left: 40px;
+    padding: 0 20px;
+  }
+}
+
 /* Main Heading */
 .hero-title {
   display: flex;
@@ -62,6 +76,13 @@
   max-width: 800px;
   line-height: 1.6;
   width: 397px;
+}
+
+@media (max-width: 992px) {
+  .hero-description {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 /* Metadata Section */
@@ -135,11 +156,71 @@
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
+@media (max-width: 1400px) {
+  .hero-journal-image {
+    right: 40px;
+    top: 180px;
+  }
+  
+  .hero-journal-image img {
+    width: 600px;
+    height: 565px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-journal-image {
+    right: 20px;
+    top: 160px;
+  }
+  
+  .hero-journal-image img {
+    width: 500px;
+    height: 471px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-journal-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: rotate(0deg);
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .hero-journal-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 739 / 696;
+  }
+}
+
 .hero-section-content {
   width: 711px;
   margin: 150px;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .hero-section-content {
+    width: 90%;
+    max-width: 711px;
+    margin: 100px auto;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section-content {
+    margin: 80px auto;
+    padding: 0 30px;
+  }
 }
 
 .hero-section-title2 {
@@ -199,48 +280,153 @@
   }
 
   .hero-content {
+    margin-left: 0;
     padding: 0 20px;
     gap: 20px;
+    max-width: 100%;
   }
 
   .hero-title-line1 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .hero-title-line2 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .hero-description {
     font-size: 16px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-metadata {
-    gap: 24px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   .metadata-item {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .hero-button {
     padding: 12px 24px;
     font-size: 16px;
   }
+
+  .hero-journal-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: rotate(0deg);
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-journal-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 739 / 696;
+  }
+
+  .hero-section-content {
+    width: 100%;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .hero-section-title2 {
+    font-size: 18px;
+  }
+
+  .hero-section-title3 {
+    font-size: 24px;
+  }
+
+  .hero-section-description2 {
+    font-size: 16px;
+  }
+
+  .hero-detay-button {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    min-height: 400px;
+    padding: 40px 0;
+  }
+
+  .hero-content {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
   .hero-title-line1 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .hero-title-line2 {
-    font-size: 32px;
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 14px;
   }
 
   .hero-metadata {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
+  }
+
+  .metadata-item {
+    font-size: 13px;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-journal-image {
+    margin: 30px auto;
+  }
+
+  .hero-journal-image img {
+    max-width: 280px;
+  }
+
+  .hero-section-content {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .hero-section-title2 {
+    font-size: 16px;
+  }
+
+  .hero-section-title3 {
+    font-size: 20px;
+  }
+
+  .hero-section-description2 {
+    font-size: 14px;
+  }
+
+  .hero-detay-button {
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }

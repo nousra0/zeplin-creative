@@ -90,7 +90,7 @@ export default function Body() {
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {magazines.map((magazine) => (
           <div className="col" key={magazine.id}>
-            <div className="card mb-3 body-magazine-card-wrapper" style={{ width: '465px', maxWidth: '465px', border: 'none', boxShadow: '10px 10px 10px 10px #F6F8FF', borderRadius: '10px', height: '320px' }} key={magazine.id}>
+            <div className="card mb-3 body-magazine-card-wrapper" style={{ border: 'none', boxShadow: '10px 10px 10px 10px #F6F8FF', borderRadius: '10px' }} key={magazine.id}>
               <div className="row g-0">
                 <div className="col-md-4">
                   <Image
