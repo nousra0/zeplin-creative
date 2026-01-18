@@ -21,7 +21,6 @@ export default function Body() {
       issue: "1",
       date: "Aralık 2022",
       isNew: true,
-      isLatest: false,
       coverImage: "/images/digital.png"
     },
     {
@@ -32,7 +31,6 @@ export default function Body() {
       issue: "1",
       date: "Aralık 2022",
       isNew: true,
-      isLatest: false,
       coverImage: "/images/digital.png"
     },
     {
@@ -43,18 +41,17 @@ export default function Body() {
       issue: "1",
       date: "Aralık 2022",
       isNew: true,
-      isLatest: true,
       coverImage: "/images/digital.png"
     }
   ];
 
   // Navigation arrows - scroll functionality can be implemented when needed
   const handlePrev = () => {
-    // TODO: Implement scroll functionality
+    // Scroll functionality to be implemented
   };
 
   const handleNext = () => {
-    // TODO: Implement scroll functionality
+    // Scroll functionality to be implemented
   };
 
   return (
